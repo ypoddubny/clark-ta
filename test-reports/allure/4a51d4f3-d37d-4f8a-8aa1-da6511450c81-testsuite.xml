@@ -1,0 +1,375 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651592791920' stop='1651592837684'>
+    <name>Recommendation funnel:</name>
+    <title>Recommendation funnel:</title>
+    <test-cases>
+        <test-case start='1651592792771' status='passed' stop='1651592817971'>
+            <name>Recommendation funnel</name>
+            <title>Recommendation funnel</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1651592795060' status='passed' stop='1651592801418'>
+                    <name>contractsPage: open </name>
+                    <title>contractsPage: open </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592795061' status='passed' stop='1651592797469'>
+                            <name>I am on page "de/app/contracts?cv=2"</name>
+                            <title>I am on page "de/app/contracts?cv=2"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592797471' status='passed' stop='1651592797480'>
+                            <name>I use playwright to "set cookie consent", async ({ browserContext }) => {
+                                        await browserContext.addCookies([
+                                            {
+                                                name: 'consent',
+                                                value: '{"version":1,"categories":[{"identifier":"functional_cookies","enabled":true},{"identifier":"marketing_&amp;_tracking","enabled":false}]}',
+                                                url: codeceptjs.container.helpers('Playwright').config.url
+                                            }
+                                        ]);
+                                    }</name>
+                            <title>I use playwright to "set cookie consent", async ({ browserContext }) => {
+                                        await browserContext.addCookies([
+                                            {
+                                                name: 'consent',
+                                                value: '{"version":1,"categories":[{"identifier":"functional_cookies","enabled":true},{"identifier":"marketing_&amp;_tracking","enabled":false}]}',
+                                                url: codeceptjs.container.helpers('Playwright').config.url
+                                            }
+                                        ]);
+                                    }</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592797481' status='passed' stop='1651592801248'>
+                            <name>I refresh page </name>
+                            <title>I refresh page </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592801249' status='passed' stop='1651592801375'>
+                            <name>I wait for visible Logo</name>
+                            <title>I wait for visible Logo</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592801375' status='passed' stop='1651592801396'>
+                            <name>I grab current url </name>
+                            <title>I grab current url </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592801418' status='passed' stop='1651592801565'>
+                    <name>I wait for visible Swiper</name>
+                    <title>I wait for visible Swiper</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1651592801566' status='passed' stop='1651592802504'>
+                    <name>contractsPage: goToRecommendationsTab </name>
+                    <title>contractsPage: goToRecommendationsTab </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592801566' status='passed' stop='1651592802502'>
+                            <name>I click {xpath: .//ul[./@role = 'menubar']//li//a[(./@role = 'menuitem' and contains(concat(' ', normalize-space(./@class), ' '), ' page-navigation__link--optimisations '))]}</name>
+                            <title>I click {xpath: .//ul[./@role = 'menubar']//li//a[(./@role = 'menuitem' and contains(concat(' ', normalize-space(./@class), ' '), ' page-navigation__link--optimisations '))]}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592802505' status='passed' stop='1651592802750'>
+                    <name>recommendationsPage: waitForOpened </name>
+                    <title>recommendationsPage: waitForOpened </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592802505' status='passed' stop='1651592802588'>
+                            <name>I wait in url "de/app/recommendations?tab=no1-recommendation"</name>
+                            <title>I wait in url "de/app/recommendations?tab=no1-recommendation"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592802589' status='passed' stop='1651592802681'>
+                            <name>I wait for visible Logo</name>
+                            <title>I wait for visible Logo</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592802682' status='passed' stop='1651592802749'>
+                            <name>I wait for visible Swiper</name>
+                            <title>I wait for visible Swiper</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592802750' status='passed' stop='1651592803525'>
+                    <name>recommendationsPage: startDemandCheck </name>
+                    <title>recommendationsPage: startDemandCheck </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592802750' status='passed' stop='1651592803525'>
+                            <name>I click Start Check Button</name>
+                            <title>I click Start Check Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592803525' status='passed' stop='1651592803901'>
+                    <name>demandCheckPage: waitForOpened </name>
+                    <title>demandCheckPage: waitForOpened </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592803525' status='passed' stop='1651592803572'>
+                            <name>I wait in url "de/app/demandcheck"</name>
+                            <title>I wait in url "de/app/demandcheck"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592803572' status='passed' stop='1651592803728'>
+                            <name>I wait for visible Logo</name>
+                            <title>I wait for visible Logo</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592803728' status='passed' stop='1651592803780'>
+                            <name>I wait in url "?responseId"</name>
+                            <title>I wait in url "?responseId"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592803780' status='passed' stop='1651592803833'>
+                            <name>I wait for visible Progress Bar</name>
+                            <title>I wait for visible Progress Bar</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592803834' status='passed' stop='1651592803900'>
+                            <name>I wait for visible Questions Section</name>
+                            <title>I wait for visible Questions Section</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592803901' status='passed' stop='1651592816619'>
+                    <name>demandCheckPage: fillSurvey [{"text":"Wann bist du geboren?","answer":"31.12.1991","type":"input","mandatory":true},{"text":"Was ist dein Geschlecht?","answer":"Weiblich","type":"option","mandatory":true},{"text":"Wo wohnst du?","answer":"In meiner eigenen Wohnung","type":"option","mandatory":true},{"text":"Planst du innerhalb der nächsten 12 Monate eine Immobilie zu (re-)finanzieren?","answer":"Ja, ich plane eine Anschlussfinanzierung","type":"option","mandatory":true},{"text":"Besitzt du eines der folgenden Fahrzeuge?","answer":["Auto","Motorrad"],"type":"multiple","mandatory":true},{"text":"Wie ist deine Familiensituation?","answer":"Ich bin verheiratet","type":"option","mandatory":true},{"text":"Hast du Kinder, die unter 18 Jahre alt oder noch in Ausbildung sind?","answer":"Ja","type":"option","mandatory":true},{"text":"Was machst du beruflich?","answer":"Schüler","type":"option","mandatory":true},{"text":"Bist du gesetzlich oder privat krankenversichert?","answer":"Privat","type":"option","mandatory":true},{"text":"Was machst du in deiner Freizeit?","answer":["Ich verbringe sehr viel Zeit mit meiner Familie"],"type":"multiple","mandatory":true},{"text":"Hast du Tiere?","answer":[],"type":"multiple","mandatory":true},{"text":"Wie hoch ist dein Jahresbruttogehalt?","answer":"83340","type":"input","mandatory":true}]</name>
+                    <title>demandCheckPage: fillSurvey [{"text":"Wann bist du geboren?","answer":"31.12.1991","type":"input","mandatory":true},{"text":"Was ist dein Geschlecht?","answer":"Weiblich","type":"option","mandatory":true},{"text":"Wo wohnst du?","answer":"In meiner eigenen Wohnung","type":"option","mandatory":true},{"text":"Planst du innerhalb der nächsten 12 Monate eine Immobilie zu (re-)finanzieren?","answer":"Ja, ich plane eine Anschlussfinanzierung","type":"option","mandatory":true},{"text":"Besitzt du eines der folgenden Fahrzeuge?","answer":["Auto","Motorrad"],"type":"multiple","mandatory":true},{"text":"Wie ist deine Familiensituation?","answer":"Ich bin verheiratet","type":"option","mandatory":true},{"text":"Hast du Kinder, die unter 18 Jahre alt oder noch in Ausbildung sind?","answer":"Ja","type":"option","mandatory":true},{"text":"Was machst du beruflich?","answer":"Schüler","type":"option","mandatory":true},{"text":"Bist du gesetzlich oder privat krankenversichert?","answer":"Privat","type":"option","mandatory":true},{"text":"Was machst du in deiner Freizeit?","answer":["Ich verbringe sehr viel Zeit mit meiner Familie"],"type":"multiple","mandatory":true},{"text":"Hast du Tiere?","answer":[],"type":"multiple","mandatory":true},{"text":"Wie hoch ist dein Jahresbruttogehalt?","answer":"83340","type":"input","mandatory":true}]</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592803901' status='passed' stop='1651592803957'>
+                            <name>I see "Wann bist du geboren?", Question Title</name>
+                            <title>I see "Wann bist du geboren?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592803958' status='passed' stop='1651592804984'>
+                            <name>I fill field Field, "31.12.1991"</name>
+                            <title>I fill field Field, "31.12.1991"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592804985' status='passed' stop='1651592804998'>
+                            <name>I wait for enabled Next Question Button</name>
+                            <title>I wait for enabled Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592804999' status='passed' stop='1651592805581'>
+                            <name>I click Next Question Button</name>
+                            <title>I click Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592805581' status='passed' stop='1651592805630'>
+                            <name>I see "Was ist dein Geschlecht?", Question Title</name>
+                            <title>I see "Was ist dein Geschlecht?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592805630' status='passed' stop='1651592806318'>
+                            <name>I click Weiblich option</name>
+                            <title>I click Weiblich option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592806319' status='passed' stop='1651592806432'>
+                            <name>I see "Wo wohnst du?", Question Title</name>
+                            <title>I see "Wo wohnst du?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592806433' status='passed' stop='1651592807151'>
+                            <name>I click In meiner eigenen Wohnung option</name>
+                            <title>I click In meiner eigenen Wohnung option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592807151' status='passed' stop='1651592807185'>
+                            <name>I see "Planst du innerhalb der nächsten 12 Monate eine Immobilie zu (re-)finanzieren?", Question Title</name>
+                            <title>I see "Planst du innerhalb der nächsten 12 Monate eine Immobilie zu (re-)finanzieren?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592807186' status='passed' stop='1651592807937'>
+                            <name>I click Ja, ich plane eine Anschlussfinanzierung option</name>
+                            <title>I click Ja, ich plane eine Anschlussfinanzierung option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592807938' status='passed' stop='1651592808001'>
+                            <name>I see "Besitzt du eines der folgenden Fahrzeuge?", Question Title</name>
+                            <title>I see "Besitzt du eines der folgenden Fahrzeuge?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592808002' status='passed' stop='1651592808706'>
+                            <name>I click Auto option</name>
+                            <title>I click Auto option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592808706' status='passed' stop='1651592809264'>
+                            <name>I click Motorrad option</name>
+                            <title>I click Motorrad option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592809264' status='passed' stop='1651592809837'>
+                            <name>I click Next Question Button</name>
+                            <title>I click Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592809838' status='passed' stop='1651592809878'>
+                            <name>I see "Wie ist deine Familiensituation?", Question Title</name>
+                            <title>I see "Wie ist deine Familiensituation?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592809879' status='passed' stop='1651592810570'>
+                            <name>I click Ich bin verheiratet option</name>
+                            <title>I click Ich bin verheiratet option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592810571' status='passed' stop='1651592810693'>
+                            <name>I see "Hast du Kinder, die unter 18 Jahre alt oder noch in Ausbildung sind?", Question Title</name>
+                            <title>I see "Hast du Kinder, die unter 18 Jahre alt oder noch in Ausbildung sind?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592810694' status='passed' stop='1651592811458'>
+                            <name>I click Ja option</name>
+                            <title>I click Ja option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592811459' status='passed' stop='1651592811496'>
+                            <name>I see "Was machst du beruflich?", Question Title</name>
+                            <title>I see "Was machst du beruflich?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592811497' status='passed' stop='1651592812228'>
+                            <name>I click Schüler option</name>
+                            <title>I click Schüler option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592812228' status='passed' stop='1651592812276'>
+                            <name>I see "Bist du gesetzlich oder privat krankenversichert?", Question Title</name>
+                            <title>I see "Bist du gesetzlich oder privat krankenversichert?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592812276' status='passed' stop='1651592812951'>
+                            <name>I click Privat option</name>
+                            <title>I click Privat option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592812952' status='passed' stop='1651592813000'>
+                            <name>I see "Was machst du in deiner Freizeit?", Question Title</name>
+                            <title>I see "Was machst du in deiner Freizeit?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592813000' status='passed' stop='1651592813661'>
+                            <name>I click Ich verbringe sehr viel Zeit mit meiner Familie option</name>
+                            <title>I click Ich verbringe sehr viel Zeit mit meiner Familie option</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592813662' status='passed' stop='1651592814254'>
+                            <name>I click Next Question Button</name>
+                            <title>I click Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592814255' status='passed' stop='1651592814307'>
+                            <name>I see "Hast du Tiere?", Question Title</name>
+                            <title>I see "Hast du Tiere?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592814308' status='passed' stop='1651592815095'>
+                            <name>I click Next Question Button</name>
+                            <title>I click Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592815096' status='passed' stop='1651592815147'>
+                            <name>I see "Wie hoch ist dein Jahresbruttogehalt?", Question Title</name>
+                            <title>I see "Wie hoch ist dein Jahresbruttogehalt?", Question Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592815148' status='passed' stop='1651592816038'>
+                            <name>I fill field Field, "83340"</name>
+                            <title>I fill field Field, "83340"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592816039' status='passed' stop='1651592816051'>
+                            <name>I wait for enabled Next Question Button</name>
+                            <title>I wait for enabled Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592816052' status='passed' stop='1651592816619'>
+                            <name>I click Next Question Button</name>
+                            <title>I click Next Question Button</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1651592816619' status='passed' stop='1651592817971'>
+                    <name>registrationPage: waitForOpened </name>
+                    <title>registrationPage: waitForOpened </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1651592816619' status='passed' stop='1651592817926'>
+                            <name>I wait in url "de/app/customer/registration"</name>
+                            <title>I wait in url "de/app/customer/registration"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1651592817927' status='passed' stop='1651592817970'>
+                            <name>I see text equals "Sichere deinen Fortschritt", Title</name>
+                            <title>I see text equals "Sichere deinen Fortschritt", Title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
